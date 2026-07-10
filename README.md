@@ -10,7 +10,7 @@ After pushing this folder to a GitHub repository, install it with:
 
 ```r
 install.packages("remotes")
-remotes::install_github("YOUR_GITHUB_USERNAME/mzmineOptimiser")
+remotes::install_github("nava20ir/mzmineOptimiser")
 ```
 
 ## Create a config file
