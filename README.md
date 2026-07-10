@@ -12,7 +12,13 @@ After pushing this folder to a GitHub repository, install it with:
 install.packages("remotes")
 remotes::install_github("nava20ir/mzmineOptimiser")
 ```
+or 
 
+```
+git clone https://github.com/nava20ir/mzmineOptimiser.git
+cd mzmineOptimise
+remotes::install_local("mzmineOptimiser", dependencies = TRUE
+```
 ## Create a config file
 
 ```r
