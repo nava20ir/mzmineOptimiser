@@ -17,7 +17,7 @@ or
 ```
 git clone https://github.com/nava20ir/mzmineOptimiser.git
 cd mzmineOptimise
-remotes::install_local("mzmineOptimiser", dependencies = TRUE
+remotes::install_local("mzmineOptimiser", dependencies = TRUE)
 ```
 ## Create a config file
 
