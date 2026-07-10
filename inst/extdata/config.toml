@@ -1,0 +1,36 @@
+[paths]
+base_batch = "/home/asakhteman/mzmine_optimization/batch.mzbatch"
+mzmine_exe = "/media/shiny_baybioms/Projects/008_Bioinformatics/mzmine/mzmine_Linux_portable-4.9.14/bin/mzmine"
+mzuser = ""
+optim_root = "/home/asakhteman/mzmine_optimization/mzmine_optimisation_no_benchmark"
+final_optimised_batch = "/home/asakhteman/mzmine_optimization/best_optimised_full_batch.mzbatch"
+
+[qc]
+qc_single = "/media/shiny_baybioms/Projects/001_Metabolomics/M355_Clavel_Candice/M355_01/amir_analysis2/mzXML/260527_M355_01_HILIC_pos/260527_M355_01_HILIC_pos_QC_01.mzXML"
+qc_all = [
+  "/media/shiny_baybioms/Projects/001_Metabolomics/M355_Clavel_Candice/M355_01/amir_analysis2/mzXML/260527_M355_01_HILIC_pos/260512_M355_01_Testsamples_HILIC_pos_Semipolar_QC.mzXML",
+  "/media/shiny_baybioms/Projects/001_Metabolomics/M355_Clavel_Candice/M355_01/amir_analysis2/mzXML/260527_M355_01_HILIC_pos/260527_M355_01_HILIC_pos_Einspuel_QC_01.mzXML",
+  "/media/shiny_baybioms/Projects/001_Metabolomics/M355_Clavel_Candice/M355_01/amir_analysis2/mzXML/260527_M355_01_HILIC_pos/260527_M355_01_HILIC_pos_Einspuel_QC_02.mzXML",
+  "/media/shiny_baybioms/Projects/001_Metabolomics/M355_Clavel_Candice/M355_01/amir_analysis2/mzXML/260527_M355_01_HILIC_pos/260527_M355_01_HILIC_pos_QC_01.mzXML",
+  "/media/shiny_baybioms/Projects/001_Metabolomics/M355_Clavel_Candice/M355_01/amir_analysis2/mzXML/260527_M355_01_HILIC_pos/260527_M355_01_HILIC_pos_QC_02.mzXML"
+]
+# Empty means keep the original file list from the base batch for the final full batch.
+final_input_files = []
+
+[optimization]
+n_phase1_runs = 40
+top_n_phase2 = 8
+feature_csv_name = "features.csv"
+random_seed = 123
+
+[parameters]
+ms1_noise = [20, 50, 100, 200, 500, 1000]
+min_consecutive_scans = [3, 4, 5, 6]
+min_consecutive_intensity = [100, 200, 500, 1000]
+chrom_min_absolute_height = [100, 200, 500, 1000]
+chromatographic_threshold = [0.85, 0.90, 0.95]
+resolver_min_height = [100, 200, 500, 1000]
+peak_top_edge_ratio = [1.2, 1.5, 1.8, 2.0]
+resolver_min_scans = [3, 4, 5]
+peak_duration_min = [0.0]
+peak_duration_max = [0.5, 1.0, 1.5]

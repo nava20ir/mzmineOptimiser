@@ -1,0 +1,27 @@
+Package: mzmineOptimiser
+Type: Package
+Title: Parameter Optimisation for MZmine Batch Files Without Benchmark Peaks
+Version: 0.1.0
+Authors@R: c(
+    person(given = "Amir", family = "Asakhteman", role = c("aut", "cre"), email = "your.email@example.com")
+  )
+Description: Runs a two-phase MZmine parameter optimisation workflow from a TOML configuration file. Phase 1 samples parameter combinations on one QC file and Phase 2 validates top combinations on all QC files. The package writes optimised MZmine batch files, summary tables and diagnostic plots.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Imports:
+    xml2,
+    dplyr,
+    tidyr,
+    ggplot2,
+    fs,
+    glue,
+    readr,
+    stringr,
+    purrr,
+    RcppTOML,
+    tibble
+Suggests:
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
