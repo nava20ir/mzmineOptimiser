@@ -28,7 +28,7 @@ library(mzmineOptimiser)
 write_template_config("config.toml")
 ```
 
-Edit `config.toml` for your project paths, QC files and parameter grid.
+Edit `config.toml` for your project paths, QC files and parameter grid. Please be careful no space should be in the path of the folders.
 
 ## Run
 
