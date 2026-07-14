@@ -9,14 +9,16 @@ The package reads `config.toml`, runs the two-phase optimisation, writes the fin
 After pushing this folder to a GitHub repository, install it with:
 
 ```r
-install.packages("remotes")
-remotes::install_github("nava20ir/mzmineOptimiser")
+
+install.packages("devtools")
+devtools::install_github('nava20ir/mzmineOptimiser', upgrade='never')
+
 ```
 or 
 
 ```
 git clone https://github.com/nava20ir/mzmineOptimiser.git
-cd mzmineOptimise
+cd mzmineOptimiser
 remotes::install_local("mzmineOptimiser", dependencies = TRUE)
 ```
 ## Create a config file
