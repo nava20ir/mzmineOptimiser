@@ -21,9 +21,18 @@ git clone https://github.com/nava20ir/mzmineOptimiser.git
 cd mzmineOptimiser
 remotes::install_local("mzmineOptimiser", dependencies = TRUE)
 ```
+## Before running it on R console
+
+```bash
+<path_to_your_mzmine>/mzmine_Linux_portable-4.9.14/bin/mzmine --login-console 
+
+```
+
+
 ## Create a config file
 
 ```r
+R
 library(mzmineOptimiser)
 write_template_config("config.toml")
 ```
